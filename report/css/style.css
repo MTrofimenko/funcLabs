@@ -1,0 +1,11 @@
+.lab-href {
+    color: #343a40;
+}
+.lab-href:hover {
+    color: #95989a;
+    text-decoration: none;
+}
+.lab-title {
+    white-space: nowrap;
+    padding-right: 10px;
+}

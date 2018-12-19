@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="FP labs">
+    <meta name="author" content="Marharyta Trofymenko">
+    <link rel="icon" href="../img/f_icon.png">
+
+    <title>Lab3</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../index.html">Звіт</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab1.html">ЛР1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab2.html">ЛР2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab3.html">ЛР3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab4.html">ЛР4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab5.html">ЛР5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab6.html">ЛР6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab7.html">ЛР7</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Назва та мета 3 лабораторної роботи</h4>
+                            </div>
+                            <div>
+                                <p>Форми lambda та let</p>
+                                <p>Варіант 6. Знайти корені нелінійного рівняння виду x=ln(x)+2. Пошук наближеного значення
+                                    хоча б одного кореня рівняння f(x) = 0 на відрізку [a; b] здійснювати методами перебору
+                                    та дотичних.</p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Алгоритм програми</h4>
+                            </div>
+                            <h4>Алгоритм циклу</h4>
+                            <p>1. Перевірити вхідні параметри. Якщо a >= b, повернути 0 і завершити роботу.</p>
+                            <p>2. Інакше, обчислити рівняння з аргументом a (equation a). Якщо результат (a - equation a) по
+                                модулю більший за задану похибкау, то перейти на п. 1, де а = а + похибка.</p>
+                            <p>3. Інакше повернути а, завершити роботу.</p>
+                            <h4>Алгоритм дотичних</h4>
+                            <p>1. Визначити початкову точку пошуку. Для цього перевірити, якщо значення функціїї від меньшої
+                                границі (а) помноживши на другу похідну цієї функції від а більше за нуль, то обрати за початкову
+                                точку а. Інакше, обрати b.</p>
+                            <p>2. Запустити процес пошуку коренів передавши почтакову точку і похибку.</p>
+                            <p>3. Обчислити значення виразу x1
+                                <- x1 - equation(x1)/diff(x1), де x1 - початкова точка, equation - функція рівняння, diff - перша похідна.</p>
+                                    <p>4. Якщо початкове значення мінус обчислене більше за похибку, викликати процедуру (п.1)
+                                        з аргументами х1 і похибкою.</p>
+                                    <p>5. Інакше повернути х1 і завершити роботу.</p>
+                                    <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Обґрунтування</h4>
+                            </div>
+                            <p>Для виконання даної роботи було обрано мову програмування F#. Вона призначена для виконання на
+                                платформі .NET. Її перевагою є те, що вона поєднує в собі виразність функціональних мов,
+                                таких як OCaml і Haskell, з можливостями і об'єктною моделлю .NET. На даний момент є найпопулярнішою
+                                мовою, що підтримує функціональну парадигму.</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Код програми</h4>
+                            </div>
+                            <img class="img-fluid" src="../img/lab3/code.PNG">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Посилання</h4>
+                            </div>
+                            <a href="https://github.com/MTrofimenko/funcLabs/blob/master/Lab3.fs">https://github.com/MTrofimenko/funcLabs/blob/master/Lab3.fs</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Скрін-шот</h4>
+                            </div>
+                            <img class="img-fluid" src="../img/lab3/res1.PNG">
+                            <img class="img-fluid" src="../img/lab3/res2.PNG">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Аналіз</h4>
+                            </div>
+                            <p>Для заданого рівняння зовсім не підходить метод дотичних. Оскільки в самому алгоритмі можливі
+                                ситуації, коли наступним можливим коренем виявиться від'ємне число. В такому випадку неможливо
+                                обчислити логарифм натуральний від аргументу і програма завершає пошук, не надавши правильної
+                                відповіді. Обчислити це рівняння 100%-во можливо лише за допомогою методу перебору, який
+                                виключає такі помилки.</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Висновки</h4>
+                            </div>
+                            <p>В даній роботі освітлені правила роботи з локальними змінними, використання виразів. Отримані
+                                навички у програмування математичних алгоритмів.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

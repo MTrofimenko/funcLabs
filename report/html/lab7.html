@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="FP labs">
+    <meta name="author" content="Marharyta Trofymenko">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Lab7</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../index.html">Звіт</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab1.html">ЛР1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab2.html">ЛР2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab3.html">ЛР3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab4.html">ЛР4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab5.html">ЛР5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab6.html">ЛР6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab7.html">ЛР7</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Назва та мета 7 лабораторної роботи</h4>
+                            </div>
+                            <div>
+                                <p>Обробка списків,черг і таблиць, що змінюються</p>
+                                <p>Завдання: написати процедури, що здійснюють операції над даними, що змінюються, застосовуючи
+                                    операції присвоєння
+                                </p>
+                                <p>Варіант 5. Створити чергу з чисел. Надрукувати елементи черги. Визначити мінімальне, максимальне
+                                    значення та їх місцезнаходження в черзі. Знайти середнє арифметичне мінімального та максимального
+                                    значень черги.
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Алгоритм програми</h4>
+                            </div>
+                            <p>Описати структуру даних - чергу. Визначити основні її методи - додавання в чергу, вилучення,
+                                показ.
+                            </p>
+                            <p>Реалізувати алгоритм пошуку максимального елементу. Для цього:</p>
+                            <p>1. Оголосити функцію, яка на вхід приймає чергу.</p>
+                            <p>2. Якщо черга пуста - повернути nil та завершити роботу.</p>
+                            <p>3. Інакше, дістати наступний елемнт черги, і наступний за ним. Якщо перший більший за другий,
+                                то рекурсивно викликати себе, куди передати нову чергу (без другого елемента).</p>
+                            <p>4. Інакше, рекурсивно викливати себе без першого елемента.</p>
+                            <p>Аналогічний алгоритм реалізувати для пошуку мінімального числа.</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Обґрунтування</h4>
+                            </div>
+                            <p>Для виконання даної роботи було обрано мову програмування Lisp. Вона є однією з найстарішних
+                                та найвідоміших функціональних мов. Вона краще підходить для швидкого і простого вирішення
+                                математичних задач.</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Код програми</h4>
+                            </div>
+                            <img src="../img/lab7/code.PNG">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Посилання</h4>
+                            </div>
+                            <a href="https://github.com/MTrofimenko/funcLabs/blob/master/lab7.lsp">https://github.com/MTrofimenko/funcLabs/blob/master/lab7.lsp</a>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Скрін-шот</h4>
+                            </div>
+                            <img src="../img/lab7/result.PNG">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Висновки</h4>
+                            </div>
+                            <p>В процесі роботи шукалась найбільш підходяща реалізація черги. Оскільки черга є послідовністю
+                                елементів, її можна представити як звичайний список: головою черги має бути car цього списку,
+                                вставка елемента в чергу зводилася б до додавання нового елемента в кінець списку, а знищення
+                                елемента з черги складалося б просто у взятті cdr списку.</p>
+                            </p>
+                            <p>Складність зі списковим поданням виникає через необхідність шукати кінець списку для додавання
+                                нового елемента. Шукати доводиться тому, що, хоча стандартний спосіб представлення списку
+                                у вигляді ланцюжка пар дає нам покажчик на початок списку, доступного покажчика на кінець
+                                він не дає. </p>
+                            <p>Модифікація, що обходить цей недолік, полягає в тому, щоб представляти чергу у вигляді списку,
+                                і тримати ще додатковий покажчик на його останню пару. В такому випадку, коли потрібно вставити
+                                елемент, можна просто подивитися на цей покажчик і уникнути за рахунок цього перегляду всього
+                                списку. Черга, таким чином, представляється у вигляді пари покажчиків, front-ptr і rear-ptr,
+                                які позначають, відповідно, першу і останню пару звичайного списку.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

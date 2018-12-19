@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="FP labs">
+    <meta name="author" content="Marharyta Trofymenko">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Lab6</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="../index.html">Звіт</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab1.html">ЛР1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab2.html">ЛР2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab3.html">ЛР3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab4.html">ЛР4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab5.html">ЛР5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab6.html">ЛР6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab7.html">ЛР7</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Назва та мета 6 лабораторної роботи</h4>
+                            </div>
+                            <div>
+                                <p>Символьні дані, множини, узагальнені арифметичні операції</p>
+                                <p>Завдання: написати процедури, що здійснюють операції над символьними даними, множинами та
+                                    узагальненими сeлекторами
+                                </p>
+                                <p>Варіант 16. Многочлени з однією змінною можна ділити один на одного, отримуючи частку і залишок.
+                                    Для ділення розділимо старший член діленого на старший член дільника. В результаті вийде
+                                    перший терм частки. Потім помножимо результат на дільник, віднімемо многочлен, що вийшов
+                                    з діленого і, рекурсивно ділячи різницю на дільник, отримаємо решту частки. Зупиняємося,
+                                    коли порядок дільника перевищить порядок ділимо, і оголошуємо залишком те, що тоді буде
+                                    називатися діленим. Крім того, якщо коли-небудь ділене виявиться нулем, повертаємо нуль
+                                    як і частку, і залишок. Розробити процедуру ділення многочленів
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Алгоритм програми</h4>
+                            </div>
+                            <p>Ділити многочлени в стовпчик можна алгоритмом, аналогічним до того, як діляться натуральні числа.</p>
+                            <p>1. Спочатку треба перевірити, чи обидва многочлени впорядковані за спадними степенями тієї самої
+                                змінної; якщо ні, то впорядкувати їх, дописуючи також ті члени, яких немає (наприклад, замість
+                                1-x^3 писатиметься -x^3+0x^2+1</p>
+                            <p>2. «Підготувати» многочлени до ділення.</p>
+                            <p>3. Поділити найстарший член діленого на найстарший член дільника.</p>
+                            <p>4. Помножити отриманий одночлен на дільник.</p>
+                            <p>5. Відняти отриманий многочлен від діленого.</p>
+                            <p>6. Продовжувати так само, поки не отримаємо нуль або многочлен зі степенем меншим за степінь
+                                дільника. Це і є остача даного ділення.</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Обґрунтування</h4>
+                            </div>
+                            <p>Для виконання даної роботи було обрано мову програмування Lisp. Вона є однією з найстарішних
+                                та найвідоміших функціональних мов. Вона краще підходить для швидкого і простого вирішення
+                                математичних задач.</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Код програми</h4>
+                            </div>
+                            <img class="img-fluid" src="../img/lab6/code-1.PNG">
+                            <img class="img-fluid" src="../img/lab6/code-2.PNG">
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Посилання</h4>
+                            </div>
+                            <a href="https://github.com/MTrofimenko/funcLabs/blob/master/lab6.lsp">https://github.com/MTrofimenko/funcLabs/blob/master/lab6.lsp</a>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Скрін-шот</h4>
+                            </div>
+                            <img class="img-fluid" src="../img/lab6/result.PNG">
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Аналіз</h4>
+                            </div>
+                            <p>Для перевірки результату було взято приклад з відомого ресурсу, де пошагово показано, як ділити
+                                поліноми. Також розглядалися граничні випадки.</p>
+                            <img class="img-fluid" src="../img/lab6/proof.PNG">
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Висновки</h4>
+                            </div>
+                            <p>Lisp - гнучка мова, в якій дуже легко працювати зі списками. В даній роботі, було повторно опрацьовано
+                                тему символів та списків, вивчено базові функції мови Lisp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

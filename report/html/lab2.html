@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="FP labs">
+    <meta name="author" content="Marharyta Trofymenko">
+    <link rel="icon" href="../img/f_icon.png">
+
+    <title>Lab2</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="../index.html">Звіт</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab1.html">ЛР1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab2.html">ЛР2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab3.html">ЛР3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab4.html">ЛР4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab5.html">ЛР5</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab6.html">ЛР6</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/lab7.html">ЛР7</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container">
+            <div class="card">
+                <div class="card-body d-flex flex-column align-items-start">
+                  
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Назва та мета 2 лабораторної роботи</h4>
+                            </div>
+                            <div>
+                                <p>Процедури
+                                </p>
+                                <p>Завдання: написати процедури, що обчислюють задану функцію за допомогою рекурсивного та ітеративного
+                                    процесів
+                                </p>
+                                <p>Варіант 8. Синус кута (заданого в радіанах) можна обчислити, якщо скористатися наближенням
+                                    sin x ≈x при малих x і вжити тригонометричну тотожність для зменшення значення аргументу
+                                    sin. (кут «достатньо малий », якщо він не більше 0.1 радіана).
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Алгоритм програми</h4>
+                            </div>
+                            <p>1. Перевірити вхідний параметер. Якщо число меньше 0.1, то повернути це число. Завершити роботу.</p>
+                            <p>2. Інакше, обчислити вираз 3.0 * mySin(x/3.0) - 4.0 * mySin(x/3.0) ** 3.0, дe mySin - початок
+                                алгоритму.
+                            </p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Обґрунтування</h4>
+                            </div>
+                            <p>Для виконання даної роботи було обрано мову програмування F#. Вона призначена для виконання на
+                                платформі .NET. Її перевагою є те, що вона поєднує в собі виразність функціональних мов,
+                                таких як OCaml і Haskell, з можливостями і об'єктною моделлю .NET. На даний момент є найпопулярнішою
+                                мовою, що підтримує функціональну парадигму.</p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Код програми</h4>
+                            </div>
+                            <img class="img-fluid" src="../img/lab2/code.PNG">
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Посилання</h4>
+                            </div>
+                            <a href="https://github.com/MTrofimenko/funcLabs/blob/master/Lab2.fs">https://github.com/MTrofimenko/funcLabs/blob/master/Lab2.fs</a>
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Скрін-шот</h4>
+                            </div>
+                            <img class="img-fluid" src="../img/lab2/result.PNG">
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Аналіз</h4>
+                            </div>
+                            <img class="img-fluid" src="../img/lab2/proof.PNG">
+                            <hr>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-dark">
+                                <h4>Висновки</h4>
+                            </div>
+                            <p>Дана робота надає змогу ознайомитися рекурсивним процесами функціональної мови. Навчає, як вирішувати
+                                задачі, не використовуючи ітерацію (цикли). Знайомить з аплікативним порядком обчислень.</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
